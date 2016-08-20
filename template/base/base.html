@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<html>
+<head>
+	<title>News</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/master.css" %}">
+	
+</head>
+<body>
+	<div id="content">
+		<div id="header">
+			<div id="site-logo">N</div>
+			<div id="site-title"><h1>Hacker News</h1></div>
+		</div>
+		{% block content %}
+		{% endblock content %}
+	</div>
+</body>
+</html>
